@@ -72,7 +72,7 @@ main {
     border-radius: 10px;
     background-color: rgb(236, 215, 235);
 }
-#encriptar:hover, #desencriptar:hover{
+#encriptar:hover, #desencriptar:hover, #copiar:hover{
     background-color: rgb(201, 167, 233);
     cursor: pointer;
 }
