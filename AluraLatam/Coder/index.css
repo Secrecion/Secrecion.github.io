@@ -54,6 +54,7 @@ main {
 }
 
 #textoentrada, #textoresultado{
+    margin-top: 10px;
     width: 90%;
     height: 70%;
     text-align: start;
