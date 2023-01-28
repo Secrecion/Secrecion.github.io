@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Encryptador</title>
+
+</head>
+
+<body>
+    <header>
+        <img src="https://thumbs.dreamstime.com/b/vector-de-contorno-color-icono-columna-griega-antigua-la-grecia-esquema-vectorial-plano-aislado-230483299.jpg">
+        <h1 class="nombre">Encriptador/Desencriptador </h1>
+    </header>
+    <main>
+        
+        <div id="entrada">
+            <textarea id="textoentrada" type="text" placeholder="Escribe tu texto aquí"></textarea>
+            <div id="botones-entrada">
+                <button id="encriptar">Encriptar</button>
+                <button id="desencriptar">Desencriptar</button>
+            </div>
+        </div>
+
+        <div id="resultado">
+            
+                <textarea id="textoresultado" type="text"></textarea>
+                <div id="boton-copiar">
+                    <button id="copiar">Copiar</button>
+                </div>
+            
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+<script>
+    var entrada = document.querySelector("#textoentrada")
+    var entrada2 = "pepelepu"
+    var encriptar = document.querySelector("button#encriptar");
+    var desencriptar = document.querySelector("button#desencriptar");
+    var copiarb = document.querySelector("button#copiar");
+    let salida = document.querySelector("#textoresultado");
+    let stringDes = [];
+    let stringFinal = "";
+
+    function encriptacion() {
+        let separar = [];
+        let array1 = [];
+
+        separar = entrada.value.split("");
+        separar.map(valor => {
+            switch (valor) {
+                case "a":
+                    array1.push("ai");
+                    break;
+                case "e":
+                    array1.push("enter");
+                    break;
+                case "i":
+                    array1.push("imes");
+                    break;
+                case "o":
+                    array1.push("ober");
+                    break;
+                case "u":
+                    array1.push("ufat");
+                    break;
+                default:
+                    array1.push(valor)
+            }
+            console.log(array1)
+        }
+        )
+        stringFinal = array1.join("")
+        console.log(stringFinal)
+            ;
+        salida.value = stringFinal;
+
+    }
+
+    encriptar.onclick = encriptacion;
+
+    function desencriptacion() {
+
+        stringDes = entrada.value.split("ai").join("a").split("enter").join("e").split("imes").join("i").split("ober").join("o").split("ufat").join("u");
+        console.log(stringDes)
+
+        salida.value = stringDes;
+
+    }
+
+    desencriptar.onclick = desencriptacion;
+
+    function copiar() {
+        var copyText = document.getElementById("textoresultado");
+        navigator.clipboard.writeText(copyText.value);
+    }
+    copiarb.onclick = copiar;
+
+</script>
+
+
+</html>
