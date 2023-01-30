@@ -46,7 +46,7 @@ const proyectosFCC = [
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <div className="alura">
         <h1 className="alura-title">Proyectos de Alura:</h1>
         <div className="alura-project">
