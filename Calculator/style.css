@@ -39,7 +39,7 @@
     grid-column: 1 /-1;
   }
   #display{
-    font-family: "Calculator";
+    font-family: Calculator;
     font-size: 30px;
     text-align: right;
     background-color: rgb(208, 228, 238);
