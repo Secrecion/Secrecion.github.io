@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'Calculator';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./Resources/Calculator.ttf') format('ttf');
+  }
+#root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App{
+  margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgrey;
+    width: 50vh;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid black;
+}
+.calculator {
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .calculator > * {
+    border: 1px solid black;
+    padding: 30px;
+    margin:5px;
+    border-radius: 15px;
+  }
+  .calculator > *:hover{
+    cursor:pointer;
+  }
+
+  .row {
+    grid-column: 1 /-1;
+  }
+  #display{
+    font-family: "Calculator";
+    font-size: 30px;
+    text-align: right;
+    background-color: rgb(208, 228, 238);
+  }
+#clear{
+  background-color: rgb(180, 228, 86);
+  text-align: center;
+}
+.number{
+  background-color: rgb(54, 54, 54);
+  color: white;
+}
+.operator{
+  background-color: rgb(196, 58, 58);
+}
+
+#equals{
+  background-color: rgb(37, 93, 158);
+}

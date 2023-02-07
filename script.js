@@ -20,7 +20,7 @@ const proyectosAlura = [
     local: "./AluraLatam/Coder",
     id: "1.1",
     src: "./Resources/coder.png",
-  }
+  },
 ];
 
 const proyectosFCC = [
@@ -28,19 +28,25 @@ const proyectosFCC = [
     title: "Random-Quote",
     local: "./RandomQuote",
     id: "2.1",
-    src: "./Resources/quotegen.png"
+    src: "./Resources/quotegen.png",
   },
   {
     title: "Markdown-Previewer",
     local: "./MarkdownPreviewer",
     id: "2.2",
-    src: "./Resources/markdown.png"
+    src: "./Resources/markdown.png",
   },
   {
     title: "Drum-Machine",
     local: "./DrumMachine",
     id: "2.3",
-    src: "./Resources/drummachine.png"
+    src: "./Resources/drummachine.png",
+  },
+  {
+    title: "Calculator",
+    local: "./Calculator",
+    id: "2.4",
+    src: "./Resources/calculator.png",
   },
 ];
 
@@ -64,7 +70,6 @@ function App() {
           ))}
         </div>
       </div>
-
     </div>
   );
 }
@@ -72,7 +77,7 @@ function App() {
 function Boton({ item }) {
   return (
     <div className="boton">
-      <a href={item.local} target="_blank"className="link">
+      <a href={item.local} target="_blank" className="link">
         <div id={item.id} className="btn-div">
           <img src={item.src} className="btn-img" />
           <p className="btn-name">{item.title}</p>
@@ -89,7 +94,7 @@ root.render(<App />);
 function Footer() {
   return (
     <div className="footer">
-        <p className="footer-phrase">"You're not your fucking khakis"</p>
+      <p className="footer-phrase">"You're not your fucking khakis"</p>
       <img src="./Resources/Soap1.png" alt="jabon" className="logo-footer" />
     </div>
   );
