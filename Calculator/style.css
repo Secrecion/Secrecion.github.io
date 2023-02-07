@@ -2,7 +2,7 @@
   font-family: 'Digital';
   font-style: normal;
   font-weight: normal;
-  src: url('../Resources/Digital.woff') format('woff');
+  src: url('./Digital.woff') format('woff');
   }
 #root{
   display: flex;
@@ -40,6 +40,7 @@
   }
   #display{
     font-family: Digital;
+    font-size: 25px;
     text-align: right;
     background-color: rgb(208, 228, 238);
   }
