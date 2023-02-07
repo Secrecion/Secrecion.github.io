@@ -15,7 +15,7 @@
     justify-content: center;
     align-items: center;
     background-color: darkgrey;
-    width: 50vh;
+    min-width: 360px;
     border-radius: 20px;
     padding: 20px;
     border: 1px solid black;
@@ -40,7 +40,7 @@
   }
   #display{
     font-family: Digital;
-    font-size: 25px;
+    font-size:35px;
     text-align: right;
     background-color: rgb(208, 228, 238);
   }
