@@ -1,8 +1,8 @@
 @font-face {
-  font-family: 'Calculator';
+  font-family: 'Digital';
   font-style: normal;
   font-weight: normal;
-  src: url('../Resources/Calculator.ttf') format('ttf');
+  src: url('../Resources/Digital.woff') format('woff');
   }
 #root{
   display: flex;
@@ -39,8 +39,7 @@
     grid-column: 1 /-1;
   }
   #display{
-    font-family: Calculator;
-    font-size: 30px;
+    font-family: Digital;
     text-align: right;
     background-color: rgb(208, 228, 238);
   }
