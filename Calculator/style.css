@@ -2,7 +2,7 @@
   font-family: 'Calculator';
   font-style: normal;
   font-weight: normal;
-  src: url('./Resources/Calculator.ttf') format('ttf');
+  src: url('../Resources/Calculator.ttf') format('ttf');
   }
 #root{
   display: flex;
