@@ -1,0 +1,43 @@
+*{
+    color:rgb(229, 243, 255);
+}
+body{
+    background-color: gray;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+.modules{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#session-label,#break-label{
+    font-size: 25px;
+}
+.module{
+    padding: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.display{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+#break-length, #session-length{
+font-size: 50px;
+margin: 5px;
+padding:10px
+}
+#timer-label{
+    color: rgb(78, 78, 78);
+}

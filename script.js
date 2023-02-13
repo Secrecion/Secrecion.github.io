@@ -48,6 +48,12 @@ const proyectosFCC = [
     id: "2.4",
     src: "./Resources/calculator.png",
   },
+  {
+    title: "Pomodoro-Clock",
+    local: "./Pomodoro",
+    id: "2.5",
+    src: "./Resources/pomodoro.png",
+  },
 ];
 
 function App() {
