@@ -29,17 +29,17 @@
   justify-content: center;
   align-items: center;
 }
-.alura, .fcc{
+.alura, .fcc, .d3{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.alura-title, .fcc-title{
+.alura-title, .fcc-title, .d3-title{
         font-family: FightThis;
         color:white;
 }
-.alura-project, .fcc-project {
+.alura-project, .fcc-project, .d3-project {
   display: flex;
   justify-content: center;
   align-items: center;

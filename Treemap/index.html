@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>TreeMap Diagram</title>
+</head>
+
+<body>
+    <h2 id="title">Kickstarter Pledges</h2>
+    <div id="description">Top 100 Most Pledged Kickstarter Campaigns Grouped By Category</div>
+   <div id="tooltip"></div>
+    <svg id="canvas"></svg>
+
+    <svg id="legend">
+        <g>
+            <rect x="10" y="10" width="40" height="40" fill="green" class="legend-item"></rect>
+            <text x="60" y="30" fill="black">Product Design, Games, Drinks</text>
+        </g>
+        <g>
+            <rect x="10" y="50" width="40" height="40" fill="blue" class="legend-item"></rect>
+            <text x="60" y="70" fill="black">Tabletop Games, 3D Printing</text>
+        </g>
+        <g>
+            <rect x="10" y="90" width="40" height="40" fill="orange" class="legend-item"></rect>
+            <text x="60" y="110" fill="black">Gaming Hardware, Technology</text>
+        </g>
+        <g>
+            <rect x="10" y="130" width="40" height="40" fill="pink" class="legend-item"></rect>
+            <text x="60" y="150" fill="black">Video Games, Wearable</text>
+        </g>
+        <g>
+            <rect x="10" y="170" width="40" height="40" fill="brown" class="legend-item"></rect>
+            <text x="60" y="190" fill="black">Sound, Sculpture</text>
+        </g>
+        <g>
+            <rect x="10" y="210" width="40" height="40" fill="navy" class="legend-item"></rect>
+            <text x="60" y="230" fill="black">Television, Apparel</text>
+        </g>
+        <g>
+            <rect x="10" y="250" width="40" height="40" fill="tomato" class="legend-item"></rect>
+            <text x="60" y="270" fill="black">Narrative Film, Food</text>
+        </g>
+        <g>
+            <rect x="10" y="290" width="40" height="40" fill="yellow" class="legend-item"></rect>
+            <text x="60" y="310" fill="black">Web, Art</text>
+        </g>
+        <g>
+            <rect x="10" y="330" width="40" height="40" fill="lightgrey" class="legend-item"></rect>
+            <text x="60" y="350" fill="black">Hardware, Gadgets</text>
+        </g>
+    </svg>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+<script src="./script.js"></script>
+
+</html>

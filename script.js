@@ -55,6 +55,38 @@ const proyectosFCC = [
     src: "./Resources/pomodoro.png",
   },
 ];
+const proyectosD3 = [
+  {
+    title: "Bar Chart",
+    local: "./BarChart",
+    id: "3.1",
+    src: "./Resources/barchart.png",
+  },
+  {
+    title: "Scatterplot Graph",
+    local: "./ScatterplotGraph",
+    id: "3.2",
+    src: "./Resources/scatterplotgraph.png",
+  },
+  {
+    title: "Heat Map",
+    local: "./HeatMap",
+    id: "3.3",
+    src: "./Resources/heatmap.png",
+  },
+  {
+    title: "Choropleth Map",
+    local: "./ChoroplethMap",
+    id: "3.4",
+    src: "./Resources/choroplethmap.png",
+  },
+  {
+    title: "Treemap",
+    local: "./Treemap",
+    id: "3.5",
+    src: "./Resources/treemap.png",
+  }
+]
 
 function App() {
   return (
@@ -69,13 +101,23 @@ function App() {
       </div>
 
       <div className="fcc">
-        <h1 className="fcc-title">Proyectos de FCC:</h1>
+        <h1 className="fcc-title">Proyectos de FCC(React):</h1>
         <div className="fcc-project">
           {proyectosFCC.map((item) => (
             <Boton item={item} />
           ))}
         </div>
       </div>
+
+      <div className="d3">
+        <h1 className="d3-title">Proyectos de Data Visualization (D3):</h1>
+        <div className="d3-project">
+          {proyectosD3.map((item) => (
+            <Boton item={item} />
+          ))}
+        </div>
+      </div>
+
     </div>
   );
 }
